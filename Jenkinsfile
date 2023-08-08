@@ -12,7 +12,7 @@ pipeline {
                 sh './mvnw package'
             }
             post {
-                success {
+                always {
                     archiveArtifacts 'target/*.war'
                 }
             }
