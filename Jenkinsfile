@@ -14,7 +14,6 @@ pipeline {
             post {
                 always {
                     archiveArtifacts 'target/*.war'
-                    emailext body: 'Helllo', subject: 'Good', to: 'oliversylvester97@gmail.com'
 
                 }
             }
