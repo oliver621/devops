@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/oliver621/devops.git'
+                git branch: 'all', url: 'https://github.com/oliver621/devops.git'
                 sh './mvnw compile'
             }
         }
