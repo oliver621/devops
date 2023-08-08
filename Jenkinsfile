@@ -14,6 +14,7 @@ pipeline {
             post {
                 always {
                     archiveArtifacts 'target/*.war'
+                    mail bcc: '', body: 'Hello', cc: '', from: '', replyTo: '', subject: '', to: 'oliversylvester97@gmail.com'
                 }
             }
         }
