@@ -7,6 +7,11 @@ pipeline {
                 sh './mvnw compile'
             }
         }
+        stage('package') {
+            steps {
+                sh './mvnw package'
+            }
+        }
         stage('deploy to tomcat') {
             steps {
                 /* groovylint-disable-next-line LineLength */
