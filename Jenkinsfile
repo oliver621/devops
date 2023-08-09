@@ -15,7 +15,7 @@ pipeline {
         stage('deploy to tomcat') {
             steps {
                 /* groovylint-disable-next-line LineLength */
-                deploy adapters: [tomcat9(credentialsId: 'new', path: '', url: 'http://13.40.10.213:8080')], contextPath: 'tin', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'new', path: '', url: 'http://13.40.10.213:8080')], contextPath: 'chin', war: '**/*.war'
             }
         }
     }
